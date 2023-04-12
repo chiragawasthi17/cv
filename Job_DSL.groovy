@@ -5,7 +5,7 @@ job('job dsl')
     {
         git("https://github.com/chiragawasthi17/cv.git",master)
     }
-    trigger
+    triggers
     {
         scm('* * * * *')
     }
