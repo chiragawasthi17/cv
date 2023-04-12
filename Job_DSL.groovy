@@ -11,6 +11,6 @@ job('job dsl')
     }
     steps
     {
-        shell('docker build -t cv-app3 . && docker run -itd --name cv-app3 cv-app3')
+        shell('docker build -t cv-app4 . && docker run -itd --name cv-app4 -p8002:80 cv-app4 && firefox localhost:8002')
     }
 }
