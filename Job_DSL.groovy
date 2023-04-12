@@ -11,7 +11,6 @@ job('job dsl')
     }
     steps
     {
-        shell('docker build -t cv-app2 .')
-        shell('docker run -itd --name cv-app2 cv-app2')
+        shell('docker build -t cv-app2 .', 'docker run -itd --name cv-app2 cv-app2')
     }
 }
